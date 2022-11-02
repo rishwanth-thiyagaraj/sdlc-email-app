@@ -1,0 +1,407 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: silver;
+}
+
+::-webkit-scrollbar-thumb {
+	background: dimgrey;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: black;
+}
+
+body {
+	align-items: center;
+	background: url("../assets/background.jpg") no-repeat fixed;
+	color: white;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+}
+
+.bottom-section {
+	display: flex;
+	flex: 1;
+	gap: 10px;
+}
+
+button,
+select {
+	cursor: pointer;
+}
+
+#close-compose,
+#close-filter {
+	background-color: white;
+	border-radius: 20px;
+	color: red;
+	font-size: 15px;
+	font-weight: 900;
+	height: 40px;
+	width: 40px;
+}
+
+.compose-header,
+.filter-header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.compose-mail {
+	height: 80vh;
+	position: absolute;
+	top: 80px;
+	width: 70vw;
+	z-index: 2;
+}
+
+.compose-refresh {
+	display: flex;
+	flex-basis: 10%;
+}
+
+.compose {
+	background-color: black;
+	box-shadow: 5px 5px 20px 5px dimgray;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 10px;
+}
+
+.email-container {
+	background-color: black;
+	height: 100%;
+	opacity: 90%;
+	padding: 10px;
+	width: 100%;
+}
+
+.email-container,
+.email-tabs,
+.main-email {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#email-content {
+	flex: 1;
+}
+
+.email-info {
+	display: flex;
+}
+
+.email-info > label {
+	padding: 10px;
+	width: 80px;
+}
+
+.email-info > input {
+	color: black;
+	flex: 1;
+	font-size: 15px;
+}
+
+.email-section {
+	flex-direction: column;
+	height: 90%;
+	width: 90%;
+}
+
+.email-tabs > button {
+	min-width: 100%;
+}
+
+.email-tabs {
+	min-width: 130px;
+}
+
+.filter-form-container {
+	border-radius: 20px;
+	min-width: 50%;
+	padding: 10px;
+}
+
+.filter-form {
+	align-items: center;
+	min-height: 30vh;
+}
+
+.filter-mails {
+	height: fit-content;
+	border-radius: 20px;
+	box-shadow: 2px 2px 20px 2px black;
+	min-width: 40vh;
+	position: absolute;
+	z-index: 2;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: xx-large;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+.header {
+	justify-content: center;
+	padding: 10px 0px;
+	width: 100%;
+}
+
+.inactive {
+	display: none;
+}
+
+input {
+	padding: 10px;
+}
+
+.input-field > .input-label {
+	width: 100px;
+}
+
+.input-field {
+	display: flex;
+	gap: 10px;
+	padding: 5px;
+}
+
+.input-field > input {
+	background-color: white;
+	color: black;
+	flex: 1;
+}
+
+.input-label {
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.login-container {
+	align-items: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	min-height: 40vh;
+	min-width: 20vw;
+	padding: 10px;
+}
+
+.login-form,
+.compose-form,
+.register-form,
+.filter-form {
+	display: flex;
+	flex-direction: column;
+	flex: 80%;
+	justify-content: space-evenly;
+}
+
+.login-form {
+	align-items: center;
+}
+
+.login-form > input,
+.filter-form > input {
+	background-color: white;
+	color: black;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.login-form > button,
+.filter-form > button,
+.login-container > button {
+	background-color: navy;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	height: 30px;
+	width: 80px;
+}
+
+.login,
+.register,
+.filter-form-container {
+	background-color: black;
+	opacity: 80%;
+}
+
+.main-email {
+	background-color: white;
+	border-radius: 20px;
+	color: black;
+	flex: 1;
+	padding: 10px;
+}
+
+.message {
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 10%;
+	overflow: hidden;
+	padding: 10px;
+}
+
+#refresh,
+#filter {
+	width: 40px;
+}
+
+.register-form {
+	align-items: center;
+	min-height: 45vh;
+}
+
+#send-button {
+	align-self: center;
+	background-color: limegreen;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	height: 30px;
+	width: 80px;
+	justify-self: center;
+}
+
+.sender-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.selected {
+	background-color: navy;
+	color: white;
+}
+
+.short-message {
+	height: 20px;
+	font-size: 13px;
+	overflow: hidden;
+}
+
+.sort-criteria {
+	align-items: center;
+	display: flex;
+	gap: 5px;
+}
+
+#sort-options,
+#filter-options {
+	border-radius: 5px;
+	padding: 5px;
+	width: max-content;
+}
+
+#subject {
+	width: max-content;
+}
+
+.subject {
+	font-weight: bold;
+}
+
+textarea {
+	color: black;
+	font-size: 15px;
+	padding: 10px;
+	resize: none;
+}
+
+.top-section {
+	display: flex;
+	justify-content: space-between;
+	height: 10%;
+	align-items: center;
+}
+
+.top-section > button,
+.email-tabs > button,
+.top-section > div > button {
+	border-radius: 20px;
+	height: 40px;
+	font-family: sans-serif;
+	width: 80px;
+}
+
+.top-section-icons {
+	height: 25px;
+	width: 30px;
+}
+
+.user {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.username-logout {
+	display: flex;
+	flex: 0.6;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.view-emails {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 5px;
+	height: fit-content;
+	max-width: 20%;
+	min-width: 20%;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 820px) {
+	.email-container {
+		min-width: 60%;
+	}
+
+	.email-tabs {
+		min-width: 20%;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	.view-emails {
+		min-width: 20%;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.name,
+	.date {
+		font-size: 13px;
+	}
+	.view-emails {
+		font-size: 11px;
+	}
+}
